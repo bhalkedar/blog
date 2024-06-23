@@ -294,7 +294,7 @@ p {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 0; /* Stay on top */
+    z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
