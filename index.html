@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/js/index.js"></script>
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="https://i.ibb.co/jM5dLX6/a-minimalist-black-and-white-logo-featuring-a-styl-p-Ek-TM5r-ST8mw-Zr-DFAlq6-w-KR1-HV-i-TCODOKwn-Sa2.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <li class="contect_class" onclick="openModal()">Contect</li>
+                    <a href="profile.html"><i class="fa-solid fa-user-large user_profile"></i></a>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!--contact model -->
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()"><i class="fa-solid fa-circle-xmark"></i></span>
+          <h2>Contact us </h1>
+          <div class="inputs_of_contact_popup">
+            <div class="inputs_of_contact_popup_2">
+                <label for="Email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email... "><br><br>
+                <label for="Message">Message :</label>
+                <textarea name="Message" id="Message" cols="30" style="height: none;width: 100%;" placeholder="Enter Your Message..."></textarea><br>
+                <button type="submit" class="contect_detail_submit-button" onclick="closeModal()">Submit</button>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+
+    <div class="search_bar">
+        <input type="search" name="search" id="search" placeholder="Search here..">
+    </div>
+    <div class="blog_main">
+        <div class="blog">
+            <div class="blog_header">
+                <div class="profile_photo">
+                    <img src="https://i.ibb.co/sJ90XPK/a-minimalist-black-and-white-logo-featuring-a-styl-p-Ek-TM5r-ST8mw-Zr-DFAlq6-w-KR1-HV-i-TCODOKwn-Sa2.jpg" alt="">
+                </div>
+                <div class="profile_name">
+                    <a href=""><strong>52 BARS</strong></a>
+                    <p>18/6/2024</p>
+                </div>
+            </div>
+            <div class="line_main">
+                <div class="line"></div>
+            </div>
+
+            <div class="text_content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident numquam labore dicta nostrum
+                    sed mollitia aperiam odit tempora, eum aut commodi distinctio dolore cupiditate minima, eligendi
+                    soluta nisi. Architecto blanditiis doloremque, quasi, accusamus nam, illum minus minima repudiandae
+                    provident eum quis consequuntur. Iste at unde perspiciatis aliquam, nobis animi ipsam assumenda
+                    commodi ullam. Ipsum hic impedit quisquam. Impedit ipsa nihil nam temporibus minima quam aliquid.
+                    Inventore facere, vero atque consectetur repudiandae, dolor voluptas minus explicabo ipsa fugiat
+                    fuga tempora recusandae sequi cum neque pariatur quasi odio ratione. Tempore consectetur ipsa
+                    explicabo voluptas debitis et id? Aspernatur aliquid velit veniam? Sed vel quod reprehenderit
+                    excepturi dolores officiis hic quis laborum, illum, quisquam omnis recusandae et earum soluta veniam
+                    voluptates temporibus quas eveniet assumenda voluptatum ullam! Deleniti doloribus commodi ipsam
+                    laborum alias adipisci mollitia distinctio laudantium expedita maiores saepe quis, aliquam fugit
+                    porro quia labore cumque ad provident, tempora incidunt nam. Repudiandae cumque modi saepe beatae.
+                    Voluptate placeat repudiandae mollitia itaque quidem illum dolore molestias provident repellat enim
+                    eius quam autem, culpa quibusdam ex dolores quo vel non necessitatibus sed odio magni dolorum ipsa!
+                    Sed beatae corrupti dolores voluptatibus voluptates iure assumenda deserunt vitae, veritatis
+                    repellendus tempora dolorem ipsa minima quo! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Neque expedita ipsa odio excepturi consectetur alias pariatur nulla dolorum explicabo labore
+                    harum eum quaerat fugiat natus nam tenetur, corporis est magnam porro eaque. Dolore delectus,
+                    accusamus commodi dolores obcaecati minus voluptatibus eos exercitationem sed blanditiis quo,
+                    asperiores nulla quis atque soluta.</p>
+            </div>
+            <div class="like">
+                <div class="like-container">
+                    <button id="like-button" class="like-button">
+                        <span class="like-icon"><i class="fa-regular fa-thumbs-up"></i></span>
+                        <span id="like-count" class="like-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_Content">
+            <div class="footer_logo">
+                <div class="logo footer_photo">
+                    <a href="index.html"><img src="https://i.ibb.co/jM5dLX6/a-minimalist-black-and-white-logo-featuring-a-styl-p-Ek-TM5r-ST8mw-Zr-DFAlq6-w-KR1-HV-i-TCODOKwn-Sa2.png" alt=""></a>
+                </div>
+            </div>
+            <div class="links">
+                <ul class="footer_links">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <li class="contect_class" onclick="openModal()">Contect</li>
+                </ul>
+            </div>
+            <div class="contacts_inputs">
+                <p>Subscribe for News letter</p>
+                <input type="email" name="Email" id="mail" placeholder="Enter Your Email...">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
