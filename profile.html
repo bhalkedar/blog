@@ -40,14 +40,15 @@
                         <li>About</li>
                     </a>
                     <li class="contect_class" onclick="openModal()">Contect</li>
-                    <a href="profile.html" ><i class="fa-solid fa-user-large user_profile active"></i></a>
+                    <a href="profile.html"><i class="fa-solid fa-user-large user_profile active"></i></a>
                 </ul>
             </div>
             <div class="sidebar">
-                <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <button onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
         </nav>
     </div>
+
 
     <!--contact model -->
 
@@ -71,9 +72,21 @@
 
     </div>
 
+    <!-- sidebar -->
+
+    <div class="sidebar2" id="sidebar2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#">About us</a>
+        <a href="#" onclick="openModal()">Contact us </a>
+
+    </div>
+      
+
     <div class="profile-main">
         <div class="profile_page_image">
-            <img src="https://i.ibb.co/jM5dLX6/a-minimalist-black-and-white-logo-featuring-a-styl-p-Ek-TM5r-ST8mw-Zr-DFAlq6-w-KR1-HV-i-TCODOKwn-Sa2.png" alt="">
+            <img src="https://i.ibb.co/jM5dLX6/a-minimalist-black-and-white-logo-featuring-a-styl-p-Ek-TM5r-ST8mw-Zr-DFAlq6-w-KR1-HV-i-TCODOKwn-Sa2.png"
+                alt="">
         </div>
         <div class="profile_page-user-info">
             <strong>52 BARS</strong><br>
@@ -91,19 +104,42 @@
     <div class="profile_search_bar">
         <input type="search" name="search" id="search" placeholder="Search here..">
     </div>
-    <div class="blog-info">
-        <div class="info_name_or_date">
-            <strong>Topic name :</strong>
-            <p class="blog_date">23/06/2024</p>
+    <div class="blog_main">
+        <div class="blog-info">
+            <div class="info_name_or_date">
+                <strong>Topic name :</strong>
+                <p class="blog_date">23/06/2024</p>
+            </div>
+            <div class="open_icon">
+                <a href="" class="open_blog"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
         </div>
-        <div class="open_icon">
-            <a href="" class="open_blog"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <!-- Popup container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Welcome to our Website!</h2>
+            <p>This is a professional popup message.</p>
+            <form>
+                <div class="input-container">
+                    <input type="text" id="input1" placeholder="Enter Topic :">
+                </div>
+                <div class="input-container">
+                    <textarea type="text" rows="50" id="input2" placeholder="Enter content :"
+                        style="height: 60px;"></textarea>
+                </div>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
         </div>
     </div>
 
-        <div class="create_blog_button">
-            <button><i class="fa-solid fa-circle-plus"></i><p>Create Blog</p></button>
-        </div>
+    <div class="create_blog_button" onclick="openPopup()">
+        <button><i class="fa-solid fa-circle-plus"></i>
+            <p>Create Blog</p>
+        </button>
+    </div>
+
 </body>
 
 </html>

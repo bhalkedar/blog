@@ -82,10 +82,14 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 13px 30px;
     border-radius: 8px;
+
+}
+
+.blog_main {
+    margin: 70px 40px;
 }
 
 .blog_date {
@@ -95,17 +99,17 @@ input:focus {
 }
 
 .info_name_or_date strong,
-p{
+p {
     color: black;
 }
 
-.open_blog i{
+.open_blog i {
     color: black;
 }
 
 .open_blog {
     font-size: 18px;
-    padding:6px 10px;
+    padding: 6px 10px;
     border-radius: 50%;
 }
 
@@ -114,13 +118,14 @@ p{
     transition: 0.2s;
 }
 
-.create_blog_button button{
+.create_blog_button button {
     background-color: rgb(173 173 173 / 74%);
     color: black;
     position: fixed;
     font-size: 15px;
+    cursor: pointer;
     bottom: 0;
-    border-top-left-radius:50px ;
+    border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     width: 100%;
     padding: 10px;
@@ -131,7 +136,213 @@ p{
     font-weight: 600;
 }
 
-.active{
-    background-color:black ;
+.active {
+    background-color: black;
     color: white;
+}
+
+/* Popup container */
+.popup {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 111;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+    animation: fadeIn 0.5s ease-in-out;
+    /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Popup container */
+.popup {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+    animation: fadeIn 0.5s ease-in-out;
+    /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 10%;
+    /* 10% from top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    /* 80% of parent element */
+    animation: slideIn 0.5s ease-in-out;
+    /* Slide in animation */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Input fields */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container input,textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    border: 1.6px solid grey;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+.input-container input{
+    margin-top: 20px;
+}
+
+.input-container input:focus,textarea:focus {
+    border-bottom:1px solid rgb(9, 37, 62);
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-radius:0px;
+    border-right: none;
+}
+
+/* Fade out animation */
+.popup.fadeOut {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* The sidebar menu */
+.sidebar2 {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: -1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar2 a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the sidebar */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
 }
